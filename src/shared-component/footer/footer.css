@@ -1,0 +1,23 @@
+.footer {
+	position: absolute;
+	bottom: -23.4rem;
+	background-color: var(--tint-color);
+	width: 100%;
+}
+
+.container-footer {
+	padding: 9.6rem;
+	text-align: center;
+}
+
+.footer-link:link {
+	color: var(--grey-color);
+}
+
+.footer-icon {
+	font-size: 4.4rem;
+}
+
+.footer-text {
+	font-size: 2.4rem;
+}

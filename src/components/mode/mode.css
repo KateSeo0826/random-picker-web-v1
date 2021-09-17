@@ -1,0 +1,44 @@
+.mode {
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius: 11px;
+	overflow: hidden;
+}
+
+.mode-content {
+	padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.mode-title {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	font-size: 2.4rem;
+	color: var(--dark-grey-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 3.2rem;
+}
+
+.mode-description {
+	font-size: 1.8rem;
+	margin-bottom: 3.2rem;
+}
+
+.mode-try {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	font-size: 1.8rem;
+	text-decoration: none;
+	color: var(--dark-grey-color);
+	background-color: var(--light-grey-color);
+	padding: 1.2rem 2.4rem;
+	border-radius: 11px;
+}
+
+.mode-attributes {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}

@@ -1,0 +1,23 @@
+/* NAVIGATION */
+
+.main-navigation__menu-btn {
+	display: none;
+	font-size: 3.6rem;
+	background: transparent;
+	border: none;
+}
+
+.main-navigation__drawer-nav {
+	height: 100%;
+}
+
+.mobile-nav-menu,
+.mobile-nav-cancel {
+	display: none;
+	font-size: 3.6rem;
+}
+
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+}

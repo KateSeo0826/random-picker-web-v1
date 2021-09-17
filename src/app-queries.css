@@ -1,0 +1,89 @@
+/* 
+rem and em do NOT depent on html font-size in media queries
+1rem = 1em = 16px
+*/
+
+/*  BELOW 1344px (Smaller Computers) */
+
+@media screen and (max-width: 84em) {
+	.hero-container {
+		max-width: 120rem;
+	}
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+
+@media screen and (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+
+	.container-mode {
+		gap: 6.4rem;
+	}
+}
+
+/* BELOW 950px (Tablets) */
+
+@media screen and (max-width: 60em) {
+	html {
+		font-size: 50%;
+	}
+
+	.main-navigation__menu-btn {
+		display: block;
+	}
+
+	.main-navigation__header-nav {
+		display: none;
+	}
+
+	.nav-list {
+		flex-direction: column;
+		margin-top: 50%;
+	}
+
+	.hero-container {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-text-box {
+		padding: 0 4.8rem;
+	}
+
+	.hero-image-box {
+		text-align: center;
+	}
+
+	.hero-img {
+		width: 60%;
+	}
+
+	.container-mode {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* BELOW 576px (Mobile) */
+
+@media screen and (max-width: 36em) {
+	html {
+		font-size: 48%;
+	}
+
+	.container-mode {
+		grid-template-columns: 1fr;
+	}
+
+	.about-imgs {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about-img {
+		margin: auto;
+	}
+
+	.btns {
+		flex-direction: column;
+	}
+}

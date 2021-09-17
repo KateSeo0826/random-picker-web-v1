@@ -1,0 +1,25 @@
+.review {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius: 11px;
+	padding: 3.2rem;
+}
+
+.review-title {
+	font-size: 2.4rem;
+	margin-bottom: 3.2rem;
+}
+
+.review-description {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	margin-bottom: 3.2rem;
+}
+
+.review-credit {
+	font-size: 1.4rem;
+	color: var(grey-color);
+	margin-bottom: 2.4rem;
+}
