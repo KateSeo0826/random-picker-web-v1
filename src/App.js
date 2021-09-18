@@ -26,12 +26,16 @@ const App = () => {
 		section.scrollIntoView({ behavior: 'smooth' });
 	};
 
+	const moveToTop = () => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	};
+
 	return (
 		<Router>
 			<div className='app'>
 				<Header className='header sticky'>
 					<h1>
-						<Link to='/' className='logo'>
+						<Link to='/' className='logo' onClick={moveToTop}>
 							Random Picker
 						</Link>
 					</h1>
