@@ -29,17 +29,13 @@ const App = () => {
 	return (
 		<Router>
 			<div className='app'>
-				<Header className='header'>
+				<Header className='header sticky'>
 					<h1>
 						<Link to='/' className='logo'>
 							Random Picker
 						</Link>
 					</h1>
-					<Navigation
-						about={moveToSectionAbout}
-						review={moveToSectionReview}
-						className='main-navigation'
-					/>
+					<Navigation about={moveToSectionAbout} review={moveToSectionReview} />
 				</Header>
 				<Footer />
 				<Switch>

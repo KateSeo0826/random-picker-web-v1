@@ -25,7 +25,7 @@ const Navigation = (props) => {
 			{drawerIsOpen && (
 				<SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
 					<nav className='main-navigation__drawer-nav'>
-						<NavLink about={about} />
+						<NavLink about={about} review={review} />
 					</nav>
 				</SideDrawer>
 			)}
