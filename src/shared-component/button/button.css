@@ -2,12 +2,14 @@
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--dark-grey-color);
 	background-color: var(--light-grey-color);
 	border: none;
 	padding: 1.2rem 2.4rem;
 	border-radius: 11px;
 	cursor: pointer;
+	margin: auto;
 }

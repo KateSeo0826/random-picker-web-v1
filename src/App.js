@@ -16,6 +16,16 @@ import './app.css';
 import './app-queries.css';
 
 const App = () => {
+	const moveToSectionAbout = () => {
+		const section = document.querySelector('.section-about');
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
+	const moveToSectionReview = () => {
+		const section = document.querySelector('.section-review');
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<Router>
 			<div className='app'>
@@ -25,12 +35,16 @@ const App = () => {
 							Random Picker
 						</Link>
 					</h1>
-					<Navigation />
+					<Navigation
+						about={moveToSectionAbout}
+						review={moveToSectionReview}
+						className='main-navigation'
+					/>
 				</Header>
 				<Footer />
 				<Switch>
 					<Route path='/' exact>
-						<Home />
+						<Home about={moveToSectionAbout} />
 					</Route>
 					<Redirect to='/' />
 				</Switch>
