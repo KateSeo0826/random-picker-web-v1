@@ -41,13 +41,15 @@ const App = () => {
 					</h1>
 					<Navigation about={moveToSectionAbout} review={moveToSectionReview} />
 				</Header>
+				<Home about={moveToSectionAbout} />
+
 				<Footer />
-				<Switch>
+				{/* <Switch>
 					<Route path='/' exact>
 						<Home about={moveToSectionAbout} />
 					</Route>
 					<Redirect to='/' />
-				</Switch>
+				</Switch> */}
 			</div>
 		</Router>
 	);
