@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import Carousel from 'react-elastic-carousel';
-
 import Container from '../../shared-component/container/container';
-
 import Mode from '../../components/mode/mode';
 import Review from '../review/review';
 
@@ -12,6 +10,11 @@ import modes from '../../data/modes';
 import reviews from '../../data/reviews';
 
 import './home.css';
+import hero from '../../assets/images/hero.png';
+import app1 from '../../assets/images/app/app1.jpg';
+import app2 from '../../assets/images/app/app2.jpg';
+import app3 from '../../assets/images/app/app3.jpg';
+import app4 from '../../assets/images/app/app4.jpg';
 
 const Home = (props) => {
 	return (
@@ -54,7 +57,7 @@ const Home = (props) => {
 					</div>
 					<div className='hero-image-box'>
 						<img
-							src='./images/hero-temp.png'
+							src={hero}
 							className='hero-img'
 							alt='Random Picker mobile app screenshot'
 						/>
@@ -79,22 +82,22 @@ const Home = (props) => {
 				<Container className='about-imgs'>
 					<img
 						className='about-img'
-						src='./images/app/app1.jpg'
+						src={app1}
 						alt='Random Picker Mobile App Screenshot'
 					/>
 					<img
 						className='about-img'
-						src='./images/app/app2.jpg'
+						src={app2}
 						alt='Random Picker Mobile App Screenshot'
 					/>
 					<img
 						className='about-img'
-						src='./images/app/app3.jpg'
+						src={app3}
 						alt='Random Picker Mobile App Screenshot'
 					/>
 					<img
 						className='about-img'
-						src='./images/app/app4.jpg'
+						src={app4}
 						alt='Random Picker Mobile App Screenshot'
 					/>
 				</Container>
