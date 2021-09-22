@@ -8,6 +8,8 @@ import Backdrop from '../backdrop/backdrop';
 import './navigation.css';
 
 const Navigation = (props) => {
+	const { about, review } = props;
+
 	const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
 	const openDrawerHandler = () => {
@@ -23,7 +25,7 @@ const Navigation = (props) => {
 			{drawerIsOpen && (
 				<SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
 					<nav className='main-navigation__drawer-nav'>
-						<NavLink />
+						<NavLink about={about} review={review} />
 					</nav>
 				</SideDrawer>
 			)}
@@ -32,7 +34,7 @@ const Navigation = (props) => {
 				<FaBars />
 			</button>
 			<nav className='main-navigation__header-nav'>
-				<NavLink />
+				<NavLink about={about} review={review} />
 			</nav>
 		</React.Fragment>
 	);

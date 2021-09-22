@@ -16,21 +16,35 @@ import './app.css';
 import './app-queries.css';
 
 const App = () => {
+	const moveToSectionAbout = () => {
+		const section = document.querySelector('.section-about');
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
+	const moveToSectionReview = () => {
+		const section = document.querySelector('.section-review');
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
+	const moveToTop = () => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	};
+
 	return (
 		<Router>
 			<div className='app'>
-				<Header className='header'>
+				<Header className='header sticky'>
 					<h1>
-						<Link to='/' className='logo'>
+						<Link to='/' className='logo' onClick={moveToTop}>
 							Random Picker
 						</Link>
 					</h1>
-					<Navigation />
+					<Navigation about={moveToSectionAbout} review={moveToSectionReview} />
 				</Header>
 				<Footer />
 				<Switch>
 					<Route path='/' exact>
-						<Home />
+						<Home about={moveToSectionAbout} />
 					</Route>
 					<Redirect to='/' />
 				</Switch>

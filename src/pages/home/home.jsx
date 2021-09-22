@@ -4,6 +4,7 @@ import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import Carousel from 'react-elastic-carousel';
 
 import Container from '../../shared-component/container/container';
+
 import Mode from '../../components/mode/mode';
 import Review from '../review/review';
 
@@ -24,10 +25,19 @@ const Home = (props) => {
 							easy and simple to use with various modes!
 						</p>
 						<div className='btns'>
-							<Link to='#' className='btn btn--full'>
+							<Link
+								to={{
+									pathname:
+										'https://apps.apple.com/us/app/random-picker/id1435548123',
+								}}
+								target='_blank'
+								title='Go to App Store preview page'
+								className='btn btn--full'
+							>
 								Download App
 							</Link>
-							<Link to='#' className='btn btn--outline'>
+
+							<Link to='#' className='btn btn--outline' onClick={props.about}>
 								Learn More &darr;
 							</Link>
 						</div>
