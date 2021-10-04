@@ -13,3 +13,17 @@
 	cursor: pointer;
 	margin: auto;
 }
+
+.button--mode {
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	padding: 1.5rem;
+	border: 2px solid transparent;
+	border-radius: 11px;
+	background-color: var(--primary-color);
+	color: var(--light-grey-color);
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	font-weight: 600;
+}

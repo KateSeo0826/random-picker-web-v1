@@ -4,8 +4,10 @@
 	top: 15vh;
 	left: 10%;
 	width: 80%;
-	background: white;
+	background: var(--tint-color);
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-radius: 11px;
+	overflow: hidden;
 }
 
 .modal__header {
