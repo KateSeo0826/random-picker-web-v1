@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Dice = (props) => {
-	return <h2>Dice</h2>;
+	return <h1>Coming Soon</h1>;
 };
 
 export default Dice;

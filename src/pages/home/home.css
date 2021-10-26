@@ -24,6 +24,11 @@
 	margin-bottom: 4.8rem;
 }
 
+.hero-image-box a {
+	text-decoration: none;
+	color: var(--grey-color);
+}
+
 .hero-img {
 	width: 100%;
 }

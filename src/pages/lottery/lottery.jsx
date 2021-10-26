@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Lottery = (props) => {
-	return <h2>Lottery</h2>;
+	return <h1>Coming Soon</h1>;
 };
 
 export default Lottery;
