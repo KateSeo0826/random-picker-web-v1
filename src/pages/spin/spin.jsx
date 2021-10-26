@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Rotate } from './spin_styled_components';
 import Button from '../../shared-component/button/button';
@@ -11,14 +11,15 @@ const Spin = (props) => {
 	const [spinArrow, setSpinArrow] = useState(false);
 	const [speed, setSpeed] = useState(0);
 
+	useEffect(() => {});
+
 	const onSpinArrow = () => {
+		setSpinArrow(true);
+		changeButtonName();
+
 		setTimeout(() => {
 			setSpinArrow(false);
 		}, 3000);
-		changeButtonName();
-		changeSpeed();
-		setSpinArrow(true);
-		stopSpin();
 	};
 
 	const changeButtonName = () => {
@@ -39,7 +40,7 @@ const Spin = (props) => {
 
 	return (
 		<div className='spin'>
-			<Rotate spinArrow={false} direction={356}>
+			<Rotate spinArrow={spinArrow} duration={3000}>
 				<img className={`arrow`} src={spin_arrow} alt='arrow' />
 				{/* <img
 					className={`arrow ${spinArrow && 'arrow-spin'} ${

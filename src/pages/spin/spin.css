@@ -9,7 +9,7 @@
 	margin: 3.2rem auto;
 }
 
-.arrow-spin {
+/* .arrow-spin {
 	animation: rotation 1s infinite linear;
 }
 .arrow-spin-faster {
@@ -27,4 +27,4 @@
 	to {
 		transform: rotate(359deg);
 	}
-}
+} */
