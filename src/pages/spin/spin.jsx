@@ -39,21 +39,23 @@ const Spin = (props) => {
 	};
 
 	return (
-		<div className='spin'>
-			<Rotate spinArrow={spinArrow} duration={3000}>
-				<img className={`arrow`} src={spin_arrow} alt='arrow' />
-				{/* <img
+		<React.Fragment>
+			<div className='spin'>
+				<Rotate spinArrow={spinArrow} duration={3000}>
+					<img className={`arrow`} src={spin_arrow} alt='arrow' />
+					{/* <img
 					className={`arrow ${spinArrow && 'arrow-spin'} ${
 						spinArrow && speed == 2 && 'arrow-spin-faster'
 					} ${spinArrow && speed >= 3 && 'arrow-spin-fastest'}`}
 					src={spin_arrow}
 					alt='arrow'
 				/> */}
-			</Rotate>
+				</Rotate>
+			</div>
 			<Button mode onClick={onSpinArrow}>
 				{buttonName}
 			</Button>
-		</div>
+		</React.Fragment>
 	);
 };
 

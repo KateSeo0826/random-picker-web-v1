@@ -61,8 +61,8 @@ const Home = (props) => {
 							className='hero-img'
 							alt='Random Picker mobile app screenshot'
 						/>
-						Illustration by{' '}
 						<p className='text'>
+							Illustration by{' '}
 							<a
 								target='_blank'
 								href='https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6'
