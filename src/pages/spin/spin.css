@@ -4,10 +4,27 @@
 }
 
 .arrow {
-	font-size: 25rem;
+	width: 35rem;
 	display: block;
-	margin: 9.6rem auto;
+	margin: 3.2rem auto;
 }
 
-.spin-button {
+/* .arrow-spin {
+	animation: rotation 1s infinite linear;
 }
+.arrow-spin-faster {
+	animation: rotation 0.7s infinite linear;
+}
+
+.arrow-spin-fastest {
+	animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+} */
