@@ -12,7 +12,7 @@ import Header from './shared-component/header/header';
 import Home from './pages/home/home';
 import Footer from './shared-component/footer/footer';
 
-import './app.css';
+import './App.css';
 import './app-queries.css';
 
 const App = () => {

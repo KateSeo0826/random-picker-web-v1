@@ -1,0 +1,15 @@
+.coin-container {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.headCoin,
+.tailCoin {
+  margin: 9.6rem auto;
+  display: block;
+}
