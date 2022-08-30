@@ -1,0 +1,70 @@
+.control-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+label {
+    display: block;
+    margin: 0.3em 0;
+}
+
+.numbers{
+    text-align: center;
+}
+.numbers span{
+    margin: 0 1rem;
+}
+
+.control-box button{
+   border-radius: 0; 
+   width: 30px;
+   height: 30px;
+   background-color: #fff;
+   border: 1px solid gray;
+   margin-bottom: 1em;
+}
+
+.maxNum-box input{
+   width: 2.5em;
+   height: 2.5em;
+   margin-bottom: 1em;
+}
+
+.balls{
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+
+.ball{
+    position: relative;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: #004E99;
+    border-radius: 50%;
+    box-shadow: 20px 30px 30px -10px rgba(0,0,0,0.2);
+}
+.ball>div{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.ball>div>span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+	text-align:center;
+	line-height:35px;
+	font-size:20px;
+	font-weight:bold;
+	background:#fff;
+} 

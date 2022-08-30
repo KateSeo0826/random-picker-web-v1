@@ -7,7 +7,7 @@ import './coin.css';
 const Coin = () => {
 	const [side, setSide] = useState(1);
 	const [btnClicked, setBtnClicked] = useState(false);
-	const [flipping, setFlipping] = useState(false);
+	//const [flipping, setFlipping] = useState(false);
 	const [btnText, setBtnText] = useState('Flip');
 	const [resultText, setResultText] = useState('');
 
@@ -19,14 +19,14 @@ const Coin = () => {
 
 	useEffect(() => {
 		if (btnClicked) {
+			flippedCoin();
 			setTimeout(() => {
-				flippedCoin();
-				setFlipping(false);
+				//setFlipping(false);
 				setBtnText('Flip');
-				setResultText(() => side === 1 ? setResultText('Head') : setResultText('Tail'));
+				setResultText(() => side === 1 ? setResultText('head') : setResultText('tail'));
 			}, 1500);
 
-			setFlipping(true);
+			//setFlipping(true);
 			setBtnText('Flipping');
 			setResultText('');
 			setBtnClicked(false);
@@ -38,13 +38,8 @@ const Coin = () => {
 	return (
 		<>
 			<div className='coin-container'>
-				<div className='flipped'>
-					<h1>{resultText}</h1>
-				</div>
-				<div id="coin" className={[flipping && 'active'].filter(Boolean).join(' ')}></div>
-				<div id="coin-result">
-					{resultText === 'Head' ? <img className='headCoin' src={headCoin} alt='headCoin' /> : <img className='tailCoin' src={tailCoin} alt='tailCoin' />}
-				</div>
+				<h1>{resultText}</h1>
+				<div>{resultText === 'head' ? <img className='head' src={headCoin} alt='headCoin' /> : <img className='tail' src={tailCoin} alt='tailCoin' />}</div>
 				<Button mode onClick={() => setBtnClicked(true)}>{btnText}</Button>
 			</div>
 		</>
