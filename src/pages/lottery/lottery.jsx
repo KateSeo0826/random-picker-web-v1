@@ -11,7 +11,6 @@ const Lottery = (props) => {
 	const numChangeHandler = (e) => {
 		e.preventDefault();
 		setMaxNum(e.target.value)
-		console.log(maxNum)
 	}
 	const generateNumbers = () => {
 		let generateNum = []
@@ -27,9 +26,7 @@ const Lottery = (props) => {
 				}
 			}
 		}
-
 		setRandomNums([...generateNum].sort((a, b) => a - b))
-
 		return randomNums;
 	}
 	console.log(randomNums)
