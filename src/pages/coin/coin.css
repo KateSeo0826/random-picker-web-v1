@@ -5,11 +5,12 @@
 
 h1 {
   font-size: 22px;
+  text-transform: capitalize;
   padding-top: 20px;
 }
 
-.headCoin,
-.tailCoin {
+.head,
+.tail {
   margin: 9.6rem auto;
   display: block;
 }
