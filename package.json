@@ -2,7 +2,7 @@
 	"name": "random-picker-web",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://JeongHaeun3263.github.io/random-picker-web-v1/",
+	"homepage": "https://kateseo0826.github.io/random-picker-web-v1/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",
